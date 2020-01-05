@@ -26,7 +26,7 @@ void loop()
   Serial.println("Calculating crc incrementally");
   
   crc.clearCrc();
-  for(byte i=0;i<9;i++)
+  for(byte i=0;i<sizeof(data)-1;i++)
   {
      Serial.print("byte ");
      Serial.print(i);
